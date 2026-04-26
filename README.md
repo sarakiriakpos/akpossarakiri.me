@@ -26,3 +26,13 @@ A modern, responsive personal portfolio website built to showcase my web develop
 - **Mobile-First** responsive design
 
 ## 📁 Project Structure
+
+akpossarakiri/
+├── index.html
+├── styles.css
+├── script.js
+├── assets/
+│   ├── images/
+│   └── preview.png
+├── projects/          (optional)
+└── README.md
