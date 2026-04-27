@@ -3,52 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Developer</title>
+  <title>Akpos Sarakiri | Web Developer</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <nav>
-      <h1>Your Name</h1>
+      <h1>Akpos Sarakiri</h1>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button id="theme-toggle" class="btn">Dark Mode</button>
     </nav>
   </header>
 
   <section id="hero">
-    <h2>Hi, I'm a Web Developer</h2>
+    <h2>Hi, I'm Akpos Sarakiri</h2>
     <p>Building clean, responsive, and user-focused websites.</p>
     <a href="#projects" class="btn">See My Work</a>
   </section>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Write a short, engaging bio here...</p>
+    <p>I'm a passionate web developer with a keen interest in creating interactive and user-friendly websites. With experience in HTML, CSS, JavaScript, and various frameworks, I enjoy bringing ideas to life through code. When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.</p>
   </section>
 
   <section id="projects">
     <h2>Featured Projects</h2>
-    <!-- Project cards will go here -->
+    <div class="grid">
+      <div class="project-card">
+        <img src="images/image1.jpeg" alt="Project 1">
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/image1.jpeg" alt="Project 2">
+        <h3>Task Manager App</h3>
+        <p>A simple task management application using JavaScript and local storage.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/image1.jpeg" alt="Project 3">
+        <h3>Weather Dashboard</h3>
+        <p>A weather dashboard that fetches data from an API and displays it beautifully.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </div>
   </section>
 
   <section id="skills">
     <h2>Skills & Tools</h2>
-    <!-- Skill tags or icons -->
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Git</div>
+      <div class="skill">VS Code</div>
+      <div class="skill">Responsive Design</div>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Get In Touch</h2>
     <form id="contact-form">
-      <!-- Form fields -->
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
+    <p>&copy; 2026 Akpos Sarakiri. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
