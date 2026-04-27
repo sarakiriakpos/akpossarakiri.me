@@ -135,6 +135,42 @@ dt {
   padding: 9rem 0 4rem;
 }
 
+.contact-section {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.contact-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(134, 216, 232, 0.12), rgba(45, 125, 150, 0.5)),
+    linear-gradient(0deg, rgba(16, 43, 58, 0.28), rgba(16, 43, 58, 0.08));
+}
+
+.contact-media {
+  position: absolute;
+  inset: 0;
+}
+
+.contact-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+  color: #f6feff;
+  text-align: center;
+}
+
 .eyebrow,
 .section-label,
 .project-tag {
@@ -163,6 +199,39 @@ dt {
 
 .contact-copy {
   color: var(--muted);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(244, 254, 255, 0.42);
+  border-radius: 8px;
+  background: rgba(248, 253, 255, 0.14);
+  color: #f6feff;
+  font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(244, 254, 255, 0.6);
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  align-self: center;
+  margin-top: 1rem;
 }
 
 .hero-actions,
@@ -405,6 +474,11 @@ dt {
 
   .hero-content {
     padding-top: 8rem;
+  }
+
+  .contact-section {
+    min-height: auto;
+    padding: 5rem 0;
   }
 
   .section-heading,
