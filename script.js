@@ -27,13 +27,3 @@ filterButtons.forEach((button) => {
     });
   });
 });
-
-// Simple form submission alert (you can later connect to Formspree or EmailJS)
-const form = document.getElementById('contact-form');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert("Thank you! I'll get back to you soon.");
-    form.reset();
-  });
-}
