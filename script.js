@@ -8,6 +8,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Filter projects by category
+const filterButtons = document.querySelectorAll(".filter-chip");
+const projectCards = document.querySelectorAll(".project-card");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const selectedFilter = button.dataset.filter;
+
+    filterButtons.forEach((chip) => chip.classList.remove("is-active"));
+    button.classList.add("is-active");
+
+    projectCards.forEach((card) => {
+      const matches =
+        selectedFilter === "all" || card.dataset.category === selectedFilter;
+
+      card.classList.toggle("is-hidden", !matches);
+    });
+  });
+});
+
 // Simple form submission alert (you can later connect to Formspree or EmailJS)
 const form = document.getElementById('contact-form');
 if (form) {
@@ -17,10 +37,3 @@ if (form) {
     form.reset();
   });
 }
-
-// Dark mode toggle
-const themeToggle = document.getElementById('theme-toggle');
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-  themeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
-});
