@@ -518,3 +518,30 @@ dt {
     width: auto;
   }
 }
+
+/* Resume Section */
+.resume-section {
+  background: var(--surface);
+  text-align: center;
+}
+
+.resume-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.resume-content h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.resume-content p {
+  margin-bottom: 2rem;
+  color: var(--muted);
+}
+
+.resume-content .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
