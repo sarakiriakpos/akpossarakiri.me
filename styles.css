@@ -55,6 +55,7 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 20;
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   background: rgba(244, 251, 254, 0.8);
   border-bottom: 1px solid rgba(78, 126, 154, 0.12);
@@ -373,6 +374,7 @@ dt {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: var(--shadow);
+  -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
 
@@ -823,7 +825,7 @@ body.dark-mode .mouse-follower {
 
 @media (max-width: 900px) {
   .hero {
-    min-height: auto;
+    min-height: 60vh;
   }
 
   .hero-content {
@@ -831,7 +833,7 @@ body.dark-mode .mouse-follower {
   }
 
   .contact-section {
-    min-height: auto;
+    min-height: 60vh;
     padding: 5rem 0;
   }
 
@@ -852,7 +854,7 @@ body.dark-mode .mouse-follower {
 @media (max-width: 640px) {
   .nav-shell,
   .footer-shell {
-    min-height: auto;
+    min-height: 60px;
     padding: 1rem 0;
     align-items: start;
     flex-direction: column;
