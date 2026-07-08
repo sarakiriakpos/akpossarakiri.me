@@ -477,6 +477,30 @@ dt {
   border-top: 1px solid rgba(78, 126, 154, 0.12);
 }
 
+.newsletter-section {
+  padding-top: 1rem;
+}
+
+.newsletter-card {
+  padding: 2rem;
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.newsletter-card h2 {
+  margin: 0.35rem 0 0.75rem;
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+}
+
+.newsletter-card p {
+  margin: 0 0 1.2rem;
+  max-width: 680px;
+}
+
 /* Interactive Elements */
 .mouse-follower {
   position: fixed;
