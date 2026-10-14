@@ -16,7 +16,7 @@ A modern, responsive personal portfolio website built to showcase my web develop
 
 ## 🚀 Live Demo
 
-[View Live Portfolio]https://github.com/sarakiriakpos/akpossarakiri.me  
+[View Live Portfolio]https://akpossarakiri.me/
 
 ## 🛠️ Technologies Used
 
